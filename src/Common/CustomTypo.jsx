@@ -1,8 +1,8 @@
 import { Link, styled, Typography } from "@mui/material";
 
-export const FooterTypo=styled(Typography)(({theme})=>({
+export const FooterTypo=styled(Typography)(({theme,color})=>({
     fontFamily:theme.typography.customFonts.Montserrat,
-    color:"#FFF",
+    color:color,
     fontWeight:"500"
 }))
 export const FooterLink=styled(Link)(({theme})=>({
