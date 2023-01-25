@@ -1,6 +1,6 @@
 export const colorObject = {
   // darkPrimary: '#2A254B',
-  primary: '#FB2E86',
+  primary: '#FF6551',
   darkPrimary: '#FB2448',
   blue: '#2F1AC4',
   offNavyBlue: '#3F509E',
@@ -23,7 +23,7 @@ export const colorObject = {
   textColor:"#9295AA",
   textColor2:"#9096B2",
   inputBorder:"#BCBDDB",
-   
+
 };
 
 const customPrimaryColors = {
