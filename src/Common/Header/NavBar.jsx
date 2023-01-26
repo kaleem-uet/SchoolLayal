@@ -1,4 +1,4 @@
-import { Box, IconButton, Typography ,Stack} from "@mui/material";
+import { Box, IconButton, Typography, Stack } from "@mui/material";
 import React from "react";
 import { BtnWrapper } from "../Wrapper/Wrapper";
 import TrendingFlatIcon from "@mui/icons-material/TrendingFlat";
@@ -12,22 +12,25 @@ function NavBar() {
         justifyContent: "space-between",
       }}
     >
-      <Stack direction="row"
-          sx={{ display: "flex",
-            flexDirection: "row",
-            alignItems: "center",
-            width:"50%",
-            }}>
-        <Typography variant="h3" >Brandname</Typography>
+      <Stack
+        direction="row"
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          width: "50%",
+        }}
+      >
+        <Typography variant="h3">Brandname</Typography>
 
         <div
           style={{
-            marginLeft:100,
+            marginLeft: 100,
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            width:"60%",
-            justifyContent:"space-between"
+            width: "60%",
+            justifyContent: "space-between",
           }}
         >
           <Typography variant="h5">Home</Typography>
@@ -37,18 +40,16 @@ function NavBar() {
         </div>
       </Stack>
 
-      <Stack direction='row' sx={{
-        display:"flex",
-        alignItems:"center",
-
-      }}>
-      <div style={{marginRight:'5%',cursor:"pointer"}}>
-      <Typography variant="h5">
-        Login
-      </Typography>
-      </div>
-
-
+      <Stack
+        direction="row"
+        sx={{
+          display: "flex",
+          alignItems: "center",
+        }}
+      >
+        <div style={{ marginRight: "10px", cursor: "pointer" }}>
+          <Typography variant="h5">Login</Typography>
+        </div>
 
         <IconButton
           style={{
