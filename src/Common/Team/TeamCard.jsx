@@ -5,7 +5,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import TwitterIcon from "@mui/icons-material/Twitter";
 
-function CourcesCard() {
+function TeamCard() {
   return (
     <CardWrapper>
       <img
@@ -18,8 +18,11 @@ function CourcesCard() {
           objectFit: "cover",
         }}
       />
+      <div style={{marginTop:10,alignItems:"center",justifyContant:"center", display:"flex", flexDirection:"column"}}>
       <Typography variant="h4">Julian Jameson</Typography>
       <Typography variant="h6">Profession</Typography>
+      </div>
+
 
       <div style={{ marginTop: 20 }}>
         <Stack direction={"row"} spacing={2}>
@@ -34,7 +37,7 @@ function CourcesCard() {
 
 const CardWrapper = styled("div")(({ theme }) => ({
   width: "238px",
-  height: "375px",
+  height: "340px",
   display: "flex",
   alignItems: "center",
   flexDirection: "column",
@@ -42,4 +45,4 @@ const CardWrapper = styled("div")(({ theme }) => ({
   boxShadow: "0px 13px 19px rgba(0, 0, 0, 0.07)",
   borderRadius: 20,
 }));
-export default CourcesCard;
+export default TeamCard;
