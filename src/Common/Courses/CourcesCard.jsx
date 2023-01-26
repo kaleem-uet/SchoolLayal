@@ -1,7 +1,10 @@
 import { Stack, styled, Typography } from "@mui/material";
 import React from "react";
 import user from "../../assets/user.png";
-import InstagramIcon from '@mui/icons-material/Instagram';
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+import TwitterIcon from "@mui/icons-material/Twitter";
+
 function CourcesCard() {
   return (
     <CardWrapper>
@@ -18,17 +21,13 @@ function CourcesCard() {
       <Typography variant="h4">Julian Jameson</Typography>
       <Typography variant="h6">Profession</Typography>
 
-        <div style={{marginTop:20}}>
-            <Stack direction={"row"}>
-              <InstagramIcon/>
-              <InstagramIcon/>
-
-
-              <InstagramIcon/>
-
-            </Stack>
-        </div>
-
+      <div style={{ marginTop: 20 }}>
+        <Stack direction={"row"} spacing={2}>
+          <FacebookOutlinedIcon color="primary" />
+          <InstagramIcon  color="primary"/>
+          <TwitterIcon  color="primary"/>
+        </Stack>
+      </div>
     </CardWrapper>
   );
 }
@@ -36,9 +35,9 @@ function CourcesCard() {
 const CardWrapper = styled("div")(({ theme }) => ({
   width: "238px",
   height: "375px",
-  display:"flex",
-  alignItems:"center",
-  flexDirection:"column",
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
   backgroundColor: "#FFFFFF",
   boxShadow: "0px 13px 19px rgba(0, 0, 0, 0.07)",
   borderRadius: 20,

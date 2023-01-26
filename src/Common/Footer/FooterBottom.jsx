@@ -4,7 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import Container from '@mui/material/Container'
-import { styled, Typography } from '@mui/material';
+import { styled, Typography ,Stack} from '@mui/material';
 import { FooterTypo } from '../CustomTypo';
 function FooterBottom() {
   return (
@@ -15,13 +15,13 @@ function FooterBottom() {
            Made With Love By Figmaland All Right Reserved
            </FooterTypo>
          </div>
-         <div style={{display:"flex", flexWrap:"wrap", alignItems:"center",flexDirection:"row",}}>
+         <Stack direction='row' spacing={2}>
            <FacebookRoundedIcon sx={IconStyle}/>
            <InstagramIcon sx={IconStyle}/>
            <TwitterIcon sx={IconStyle}/>
-         </div>
+         </Stack>
        </CustomContainer>
-      
+
    </Wrapper>
   )
 }
