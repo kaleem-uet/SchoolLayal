@@ -45,10 +45,10 @@ function FooterMain() {
               <FooterLink variant="subtitle1" underLine="hover">
                 Contact us
               </FooterLink>
-              <FooterLink variant="subtitle1" underLine="hover">
+              <FooterLink variant="subtitle1"  underLine="hover">
                 Contact us
               </FooterLink>
-              <FooterLink variant="subtitle1" underLine="hover">
+              <FooterLink variant="subtitle1"  underLine="hover">
                 Contact us
               </FooterLink>
             </FooterColumn>

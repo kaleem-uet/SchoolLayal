@@ -10,4 +10,5 @@ export const FooterLink=styled(Link)(({theme})=>({
     color:"#FFF",
     fontWeight:"400",
     cursor:"pointer",
+    textDecoration:'none'
 }))

@@ -6,10 +6,13 @@ import NavBar from "./Common/Header/NavBar";
 import TeamCard from "./Common/Team/TeamCard";
 import CourseCard from "./Common/Courses/CourseCard";
 import LivePreview from "./Common/Courses/LivePreview";
+import FeatureCard from "./Common/Hero/FeatureCard";
+import HeroSection from "./Common/Hero/HeroSection";
 function App() {
   return (
     <>
-      <NavBar />
+     <HeroSection/>
+      {/* 
       <AppBar />
       <div style={{ margin: 30 }}>
         <TeamCard />
@@ -20,7 +23,9 @@ function App() {
       <div style={{ margin: 30 }}>
         <LivePreview/>
       </div>
-
+      <div style={{ margin: 30 }}>
+        <FeatureCard/>
+      </div> */}
       <Footer />
     </>
   );
