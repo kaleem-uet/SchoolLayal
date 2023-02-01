@@ -18,7 +18,7 @@ function NavBar() {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          width: "50%",
+          width: "58%",
         }}
       >
         <Typography variant="h3">Brandname</Typography>
