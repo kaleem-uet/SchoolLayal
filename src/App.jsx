@@ -12,21 +12,8 @@ function App() {
   return (
     <>
      <HeroSection/>
-      {/* 
-      <AppBar />
-      <div style={{ margin: 30 }}>
-        <TeamCard />
-      </div>
-      <div style={{ margin: 30 }}>
-        <CourseCard/>
-      </div>
-      <div style={{ margin: 30 }}>
-        <LivePreview/>
-      </div>
-      <div style={{ margin: 30 }}>
-        <FeatureCard/>
-      </div> */}
-      <Footer />
+
+      {/* <Footer /> */}
     </>
   );
 }
