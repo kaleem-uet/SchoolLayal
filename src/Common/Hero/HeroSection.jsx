@@ -1,53 +1,38 @@
-import React from "react";
+import { useEffect } from "react";
 import { HeroWrapper } from "../Wrapper/Wrapper";
 import hero from "../../assets/hero.png";
 import { Container, styled } from "@mui/material";
 import NavBar from "../Header/NavBar";
 import FeatureCard from "./FeatureCard";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function HeroSection() {
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
+
   return (
-    <HeroWrapper>
-      <img src={hero} style={{ width: "100%", height: "auto" }} />
-
-      <div
-        style={{
-          position: "absolute",
-          top: "0px",
-          width:'100%',
-          zIndex:1
-        }}
-      >
-
-        <NavBar />
-
-      </div>
-      <Container maxWidth='lg'  style={{
-        position:'absolute',
-        display:'flex',
-        flexDirection:"row",
-        justifyContent:'space-between',
-        top:550,
-
-      }}>
-        <FeatureCard/>
-        <FeatureCard/>
-        <FeatureCard/>
-
-      </Container>
-      {/* <Container maxWidth="md" sx={{position:'absolute'}}>
-         </Container> */}
-      {/* <CustomContainer  maxWidth="xl">
-        </CustomContainer>
-         <Container maxWidth="lg" sx={{position:'absolute',top:'572px',zIndex:1}}>
-         </Container> */}
-    </HeroWrapper>
+   <div style={{
+    height:'100%',
+   }}>
+    <div
+    style={{
+  backgroundImage: `url(${hero})`,
+  height: "100vh",
+  width:'auto',
+  backgroundPosition: "center",
+  backgroundRepeat:"no-repeat",
+  backgroundSize: "cover",
+  position: "relative",
+    }}
+    >
+    <Container maxWidth="md" data-aos="fade-up">
+       <NavBar/>
+    </Container>
+    </div>
+   </div>
   );
 }
 
-const CustomContainer = styled(Container)(({ theme }) => ({
-  top: 0,
-  position: "absolute",
-  marginTop: 2,
-
-}));
 export default HeroSection;

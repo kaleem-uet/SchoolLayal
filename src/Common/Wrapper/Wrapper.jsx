@@ -28,4 +28,6 @@ export const BtnWrapper = styled("div")(({ theme }) => ({
 }));
 export const HeroWrapper = styled(Box)(({ theme,}) => ({
 position:'relative'
+
+
 }));
