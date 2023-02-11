@@ -98,7 +98,7 @@ function NavBar() {
 
   return (
     <AppBar position="sticky" color="transparent" elevation={0}>
-      <NavContainer maxWidth="xl">
+      <NavContainer>
         <LogoTypography variant="h4" noWrap href="/">
           Brandname
         </LogoTypography>

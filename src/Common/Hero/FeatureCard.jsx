@@ -6,11 +6,12 @@ function FeatureCard() {
     <Box
       direction="column"
       sx={{
-        width: 300,
-        height: "100%",
+        width: 'auto',
+        height: 180,
         backgroundColor:'#FFF',
         padding: "35px 40px 35px 40px",
         boxShadow: "0px 13px 19px rgba(0, 0, 0, 0.07)",
+
       }}
     >
       <div
