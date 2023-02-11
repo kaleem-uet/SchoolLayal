@@ -8,13 +8,21 @@ import CourseCard from "./Common/Courses/CourseCard";
 import LivePreview from "./Common/Courses/LivePreview";
 import FeatureCard from "./Common/Hero/FeatureCard";
 import HeroSection from "./Common/Hero/HeroSection";
+import PopoulerCourse from "./Common/Courses/PopoulerCourse";
+import Visitor from "./Components/Home/Visitor";
 function App() {
   return (
-    <>
-     <HeroSection/>
+    <div style={{
+      display:'flex',
+      flexDirection:"column"
+    }}>
 
-      {/* <Footer /> */}
-    </>
+      <HeroSection/>
+      <PopoulerCourse/>
+      <Visitor/>
+      <Footer />
+    </div>
+
   );
 }
 
